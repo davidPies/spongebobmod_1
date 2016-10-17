@@ -1,4 +1,4 @@
-package trumpmod;
+package spongebobmod_1;
 
 import javax.annotation.Nullable;
 import net.minecraft.creativetab.CreativeTabs;
@@ -17,7 +17,7 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.world.World;
 
-public class money extends ItemFood
+public class patty extends ItemFood
 {
     /** Number of ticks to run while 'EnumAction'ing until result. */
     public final int itemUseDuration;
@@ -63,10 +63,10 @@ public class money extends ItemFood
         {
             EntityPlayer entityplayer = (EntityPlayer)entityLiving;
             entityplayer.getFoodStats().addStats(this, stack);
-            worldIn.playSound((EntityPlayer)null, entityplayer.posX, entityplayer.posY, entityplayer.posZ, SoundEvents.ENTITY_PLAYER_BURP, SoundCategory.PLAYERS, 0.5F, worldIn.rand.nextFloat() * 0.1F + 0.9F);
+            worldIn.playSound((EntityPlayer)null, entityplayer.posX, entityplayer.posY, entityplayer.posZ, sounds.yum, SoundCategory.PLAYERS, 0.5F, worldIn.rand.nextFloat() * 0.1F + 0.9F);
             this.onFoodEaten(stack, worldIn, entityplayer);
             entityplayer.addStat(StatList.getObjectUseStats(this));
-        }
+        }//mmmm! krabby patty! (spongebob talking)
 
         return stack;
     }

@@ -1,7 +1,7 @@
 {
     "parent": "builtin/generated",
     "textures": {
-        "layer0": "trumpmod:items/trumphair"
+        "layer0": "trumpmod:items/spongepants"
     },
     "display": {
         "thirdperson": {

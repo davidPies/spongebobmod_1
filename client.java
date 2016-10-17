@@ -1,4 +1,4 @@
-package trumpmod;
+package spongebobmod_1;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.ModelBiped;

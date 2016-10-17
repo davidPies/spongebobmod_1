@@ -1,6 +1,6 @@
 package spongebobmod_1;
 
-import net.minecraft.item.ItemSword;
+import net.minecraft.item.Item;
 
 public class ItemModSword extends Item {
 }

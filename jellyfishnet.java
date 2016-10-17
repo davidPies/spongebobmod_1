@@ -1,13 +1,13 @@
-package trumpmod;
+package spongebobmod_1;
 
 import net.minecraft.item.ItemSword;
 
-public class ItemModSword extends ItemSword {
+public class ItemModSword extends Item {
 }
 
-public thepoll(String unlocalizedName, ToolMaterial material) {
-    super(material);
-    this.setUnlocalizedName(unlocalizedName);
+public jellyfishnet() {
+    super();
+    this.setUnlocalizedName("jellyfishnet");
     this.setCreativeTab(tabs.trumpmodtab);
 }
 //use baseball steel bat hitting sounds

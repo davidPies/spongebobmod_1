@@ -7,6 +7,8 @@ public class ItemModSword extends Item {
 
 public jellyfishnet() {
     super();
+    this.setMaxStackSize(1);
+    //set onitemrightclick
     this.setUnlocalizedName("jellyfishnet");
     this.setCreativeTab(tabs.trumpmodtab);
 }

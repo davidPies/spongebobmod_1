@@ -33,7 +33,7 @@ public class patty extends ItemFood
     /** probably of the set potion effect occurring */
     private float potionEffectProbability;
 
-    public money(int amount, float saturation, boolean isWolfFood)
+    public patty(int amount, float saturation, boolean isWolfFood)
     {
     	super(amount, saturation, isWolfFood);
         this.itemUseDuration = 16;
@@ -45,7 +45,7 @@ public class patty extends ItemFood
         this.setMaxStackSize(100);
     }
 
-    public money(int amount, boolean isWolfFood)
+    public patty(int amount, boolean isWolfFood)
     {
         this(amount, 0.6F, isWolfFood);
     } 
@@ -126,7 +126,7 @@ public class patty extends ItemFood
         return this.isWolfsFavoriteMeat;
     }
 
-    public money setPotionEffect(PotionEffect p_185070_1_, float p_185070_2_)
+    public patty setPotionEffect(PotionEffect p_185070_1_, float p_185070_2_)
     {
         this.potionId = p_185070_1_;
         this.potionEffectProbability = p_185070_2_;
@@ -136,7 +136,7 @@ public class patty extends ItemFood
     /**
      * Set the field 'alwaysEdible' to true, and make the food edible even if the player don't need to eat.
      */
-    public money setAlwaysEdible()
+    public patty setAlwaysEdible()
     {
         this.alwaysEdible = true;
         return this;

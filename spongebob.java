@@ -1,4 +1,4 @@
-package trumpmod;
+package spongebobmod_1;
 
 import java.util.Set;
 
@@ -33,11 +33,11 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.storage.loot.LootTableList;
 
-public class trump extends EntityCow
+public class spongebob extends EntityCow
 {
-	private static final Set<Item> ITEMS = Sets.newHashSet(new Item[] {trumpmod.money, Items.GOLD_NUGGET, Items.GOLD_INGOT});
+	private static final Set<Item> ITEMS = Sets.newHashSet(new Item[] {spongebobmod_1.patty});
 
-    public trump(World worldIn)
+    public spongebob(World worldIn)
     {
         super(worldIn);
         this.setSize(0.9F, 1.4F);
@@ -45,7 +45,7 @@ public class trump extends EntityCow
 
     public static void func_189790_b(DataFixer p_189790_0_)
     {
-        EntityLiving.func_189752_a(p_189790_0_, "trump");
+        EntityLiving.func_189752_a(p_189790_0_, "spongebob");
     }
 
     protected void initEntityAI()
@@ -53,7 +53,7 @@ public class trump extends EntityCow
         this.tasks.addTask(0, new EntityAISwimming(this));
         this.tasks.addTask(1, new EntityAIPanic(this, 2.0D));
         //this.tasks.addTask(2, new EntityAIMate(this, 1.0D));
-        this.tasks.addTask(4, new EntityAITempt(this, 1.2D, trumpmod.money, false));
+        this.tasks.addTask(4, new EntityAITempt(this, 1.2D, spongebobmod_1.patty, false));
         this.tasks.addTask(4, new EntityAITempt(this, 1.2D, false, ITEMS));
         this.tasks.addTask(4, new EntityAIFollowParent(this, 1.25D));
         this.tasks.addTask(5, new EntityAIWander(this, 1.0D));
@@ -128,7 +128,7 @@ public class trump extends EntityCow
 
     public trump createChild(EntityAgeable ageable)
     {
-        return new trump(this.worldObj);
+        return new spongebob(this.worldObj);
     }
 
     public float getEyeHeight()

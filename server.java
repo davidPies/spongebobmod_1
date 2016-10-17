@@ -1,4 +1,4 @@
-package trumpmod;
+package spongebobmod_1;
 
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
